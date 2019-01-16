@@ -7,7 +7,7 @@ phases:
        - df -h
        - fdisk -l
        #- dd if=/dev/xvdcz of=/tmp/abc bs=10K count=1
-       - cat /tmp/abc
+       #- cat /tmp/abc
        - ls -al /dev
        - pwd
        - echo $0
