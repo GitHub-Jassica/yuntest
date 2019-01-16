@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - pwd
+       - echo $0
+       - ls -al
+       - cat /codebuild/output/tmp/script.sh
+       - ls -al /codebuild
+       - ls -al /codebuild/output
+       - ls -al /codebuild/output/tmp
+       - ls -al /codebuild/output/tmp/env.sh
+       - ps -aux
+       - cat /usr/local/bin/dockerd-entrypoint.sh
+       - docker ps 
+       - docker images
