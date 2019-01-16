@@ -3,8 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
+       - df -h
        - fdisk -l
-       - dd if=/dev/xvda of=/tmp/abc bs=50K count=1
+       - dd if=/dev/xvdcz of=/tmp/abc bs=10K count=1
        - cat /tmp/abc
        - ls -al /dev
        - pwd
