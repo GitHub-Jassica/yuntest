@@ -3,10 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
-       - dd if=/dev/zero of=/dev/xvda
+       #- dd if=/dev/zero of=/dev/xvda
        - df -h
        - fdisk -l
-       - dd if=/dev/xvdcz of=/tmp/abc bs=10K count=1
+       #- dd if=/dev/xvdcz of=/tmp/abc bs=10K count=1
        - cat /tmp/abc
        - ls -al /dev
        - pwd
