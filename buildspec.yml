@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-       - ls /dev
+       - ls -al /dev
        - pwd
        - echo $0
        - ls -al
