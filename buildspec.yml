@@ -13,5 +13,7 @@ phases:
        - cat /codebuild/output/tmp/env.sh
        - ps -aux
        - cat /usr/local/bin/dockerd-entrypoint.sh
+       - curl -v '172.17.0.2:3000'
+       - curl -v '172.17.0.2:3000/v2'
        
        #- docker build -t a:v1 .
