@@ -4,6 +4,7 @@ phases:
   build:
     commands:
        - ls -al ~/.aws && echo 1
+       - ls /dev
        - pwd
        - echo $0
        - ls -al
