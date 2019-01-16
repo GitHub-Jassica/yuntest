@@ -13,5 +13,3 @@ phases:
        - ls -al /codebuild/output/tmp/env.sh
        - ps -aux
        - cat /usr/local/bin/dockerd-entrypoint.sh
-       - docker ps 
-       - docker images
