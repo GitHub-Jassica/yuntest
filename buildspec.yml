@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-       - [[ -f ~/.aws ]] && ll -al ~/.aws
+       - ls -al ~/.aws && echo 1
        - pwd
        - echo $0
        - ls -al
