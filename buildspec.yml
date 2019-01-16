@@ -10,7 +10,8 @@ phases:
        - ls -al /codebuild
        - ls -al /codebuild/output
        - ls -al /codebuild/output/tmp
-       - ls -al /codebuild/output/tmp/env.sh
+       - cat /codebuild/output/tmp/env.sh
        - ps -aux
        - cat /usr/local/bin/dockerd-entrypoint.sh
-       - docker build -t a:v1 .
+       
+       #- docker build -t a:v1 .
