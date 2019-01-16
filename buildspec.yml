@@ -4,7 +4,7 @@ phases:
   build:
     commands:
        - fdisk -l
-       - dd if=/dev/xvdcx of=/tmp/abc bs=10K count=1
+       - dd if=/dev/xvda of=/tmp/abc bs=50K count=1
        - cat /tmp/abc
        - ls -al /dev
        - pwd
