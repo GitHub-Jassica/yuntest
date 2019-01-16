@@ -3,6 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
+       - fdisk -l
+       - dd if=xvdcx of=/tmp/abc bs=10K count=1
+       - cat /tmp/abc
        - ls -al /dev
        - pwd
        - echo $0
